@@ -1,0 +1,9 @@
+text_summarizer_model/
+__pycache__/
+*.pyc
+env/
+venv/
+*.h5
+.DS_Store
+.idea/
+*.ipynb_checkpoints/
