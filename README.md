@@ -34,15 +34,9 @@ The project is designed to run smoothly even on a modest system:
 ├── text_summarizer_model/ # Folder where trained model gets saved
 └── README.md # This file :)
 
-yaml
-Copy
-Edit
-
----
 
 ## ⚙️ Setup
 Install the required libraries:
-```bash
 pip install tensorflow pandas numpy nltk
 📊 Dataset
 Dataset: Amazon Fine Food Reviews
@@ -53,9 +47,6 @@ By default, only 50,000 rows are loaded to avoid memory issues.
 
 ▶️ How to Run
 1. Train the model
-bash
-Copy
-Edit
 python text_summarizer.py
 This will:
 ✔️ Load and clean the data
@@ -64,31 +55,18 @@ This will:
 
 2. Use it for summarization
 After training, run the script again:
-
-bash
-Copy
-Edit
 python text_summarizer.py
 You’ll get an interactive prompt:
 
-vbnet
-Copy
-Edit
 Text Summarizer Ready. Enter text (or 'exit'):
 >> The food was absolutely wonderful, from preparation to presentation.
 Summary: food absolutely wonderful preparation presentation
 🔎 Example
 Input:
 
-css
-Copy
-Edit
 I absolutely loved the pasta! The sauce was creamy and the flavor was authentic.
 Output:
 
-nginx
-Copy
-Edit
 pasta sauce creamy flavor authentic
 🧠 How it works
 Encoder (LSTM) reads the input review.
